@@ -1,0 +1,9 @@
+body {  
+    background-color: #d57d7d;
+   }
+
+.welcome-text{
+    color:navy;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}

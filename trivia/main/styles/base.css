@@ -1,0 +1,6 @@
+.nav-content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    list-style-type: none;
+}

@@ -1,0 +1,87 @@
+{% extends 'base.html' %} {% block head%}
+<link href="home.html" rel="stylesheet">
+{% endblock %} 
+
+{% block content %}
+<style>
+body {  
+    background-color: #ffffff;
+   }
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+}
+
+.welcome-text{
+    color:rgb(6, 52, 103);
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.other-text{
+    display: flex;
+    justify-content: center;
+}
+
+.easy{
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(58, 237, 58);
+    width:100px;
+    height:40px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.medium{
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(255, 233, 70);
+    width:100px;
+    height:40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.hard{
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(237, 58, 58);
+    width:100px;
+    height:40px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.button-con{
+    display:flex;
+    justify-content: center;
+}
+
+</style>
+<div class="container-fluid home">
+    <div class="row">
+        <div class="col-12 welcome-text"> Welcome to Trivia 100!</div>
+        <div class="col-12 other-text mt-2">Start a new game?</div>
+        <div class="col-12 other-text mt-1">Select difficulty:</div>
+        <div class="col-12 p-auto mt-3 button-con">
+            <a href="{{ url_for('main.newGame') }}"><button class="easy" >
+                Easy
+            </button></a>
+            <button class="medium">
+                Medium
+            </button>
+            <button class="hard">
+                Hard
+            </button>
+        </div>
+    </div>
+    
+</div>
+{% endblock %}
